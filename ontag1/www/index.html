@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+<head>
+
+    <title>App Framework Kitchen Sink</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="lib/appframework/icons.css" />
+    <link rel="stylesheet" type="text/css" href="lib/appframework/af.ui.css" />
+
+    <script type="text/javascript" charset="utf-8" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/fastclick.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/appframework/appframework.ui.min.js"></script>
+    <script src='cordova.js'></script>
+    <script src="js/init-app.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/allsongs.js"></script>
+    <script src="js/playlists.js"></script>
+    <script src="js/hunt.js"></script>
+    <script src="js/app.js"></script>
+
+
+
+</head>
+
+<body>
+    <div id="splashscreen" class='ui-loader heavy'>
+        App Framework
+        <br>
+        <br>
+        <span class='ui-icon ui-icon-loading spin'></span>
+        <h1>Starting app</h1>
+    </div>
+
+    <div class="view splitview">
+        
+        <header>
+            <a class="menuButton" data-left-menu="left" data-transition="cover" style="float:left"></a>
+            <h1>Title</h1>
+        </header>
+        
+        <div class="pages">
+            <div class="panel" id="songs" data-title="All Songs" data-selected="true">
+                <div class="list-wrapper" id="songs-local"></div>
+                <hr>
+                <div class="recommendations list-wrapper"></div>
+            </div>
+            
+            <div class="panel" id="playlists" data-title="Playlists">
+                <div class="list-wrapper" id="pl"></div>
+                <hr>
+                <div class="recommendations list-wrapper"></div>
+            </div>
+            
+            <div class="panel" id="gohunting" data-title="Go Hunting">
+                <div class="list-wrapper" id="prey"></div>
+            </div>
+        
+            <div class="panel" id="playlist" data-title="">
+                <div class="list-wrapper" id="playlist-local"></div>
+                <hr>
+                <div class="recommendations list-wrapper"></div>
+            </div>
+        
+            <div class="panel" id="song" data-title="">
+                <div id="song-playlists"></div>
+                <hr>
+                <div class="recommendations list-wrapper"></div>
+            </div>
+        </div>
+    <div id="progress"></div>
+    <div id="size"></div>
+    <div id="downloaded"></div>
+    
+        <div id="current_song">
+            <div id="songinfo"></div>
+            <audio id="audio-local" controls>
+                <!--<source src="sounds/xylophones-bass-drums-and-snare-drums-ambience.wav" type="audio/wav" />-->
+                <source>
+            </audio>
+        </div>
+        <nav id="left">
+            <div class="view active">
+                <header>
+                    <h1>Menu</h1>
+                </header>
+                <div class="pages">
+                    <div class="panel active" id="navPage1" data-title="Foobar">
+                        <ul class="list">
+                            <li><a href="#songs" onclick="$.afui.clearHistory()" id="go-to-songs">All Songs</a></li>
+                            <li><a href="#playlists" onclick="$.afui.clearHistory()" id="go-to-playlists">Playlists</a></li>
+                            <li><a href="#gohunting" onclick="$.afui.clearHistory()" id="go-to-gohunting">Go Hunting</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</body>
+
+</html>

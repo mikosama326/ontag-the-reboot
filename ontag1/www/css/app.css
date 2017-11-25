@@ -1,0 +1,100 @@
+button {
+    background-color: #eee ;
+    border: #999 1px solid ;
+    color: #555 ;
+    width: auto;
+    height: auto;
+    -webkit-border-radius: 50px ; border-radius: 50px ;
+    margin: 3px;
+    padding: 9px;
+    font: normal 14px/120% "Intel Clear W", Arial, sans-serif;
+    text-align: center;
+}
+
+button:focus, button:hover {
+    background-color: #555 ;
+    color: #eee ;
+    outline: none ;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#songs-local {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70%;
+}
+
+#song-playlists {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70%;
+}
+
+#pl {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70%;
+}
+
+#playlist-local {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70%;
+}
+
+.recommendations {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 30%;
+}
+
+
+.list-wrapper {
+    /*box-shadow: 5*/
+}
+
+.list-wrapper ul li {
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    margin: 5px 0px;
+}
+
+.list-wrapper ul li a {
+    margin-left: 10px;
+}
+
+.list-wrapper ul li:nth-child(odd) {
+    background-color: #eee;
+}
+
+hr {
+    border-color: #000;
+    margin: 10px 0px;
+}
+
+#song-playlists ul li{
+    margin: 5px 0px;
+    padding-left: 10px;
+}
+
+audio {
+    width: 100%;
+    border: none;
+}
+
+#current_song {
+    background-color: #555;
+}
+
+#songinfo {
+    color: #ccc;
+    /*background-color: #555;*/
+    padding: 5px 0px;
+    text-align: center;
+}
+
