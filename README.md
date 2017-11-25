@@ -1,4 +1,4 @@
-#Ontag - A New Way to Experience your Music
+# Ontag - A New Way to Experience your Music
 
 Hi! I see you have found our (see below for the names of the people who worked on this project) final year project: Ontag.
 
